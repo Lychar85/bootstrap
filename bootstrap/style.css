@@ -2,6 +2,7 @@ body {
   font-size: 25px;
   margin: 0;
   padding: 0;
+  background: #000000;
 }
 
 /*header
@@ -16,14 +17,14 @@ header {
   background-attachment: fixed;
 }
 
-.icont{
+.icont {
   float: right;
   transform: scale(1);
   transition-property: transform;
   transition-duration: 400ms;
 }
 
-.icont:hover{
+.icont:hover {
   transform: scale(1.50);
 }
 
@@ -43,8 +44,8 @@ header {
   color: #0918ee;
 }
 
-@media screen and (max-width: 600px){
-  .home-titre h1{
+@media screen and (max-width: 600px) {
+  .home-titre h1 {
     font-size: 150%;
   }
 }
@@ -88,19 +89,20 @@ header {
 
 /*navbar header
 ======================================*/
-.iconnav{
+.iconnav {
   float: right;
   animation: spin 4s linear infinite;
 
 }
 
-@keyframes spin{
+@keyframes spin {
   from {
     transform: rotate(0deg);
-}
-to {
+  }
+
+  to {
     transform: rotate(360deg);
-}
+  }
 }
 
 .topnav {
@@ -159,7 +161,8 @@ to {
     display: block;
     text-align: left;
   }
-  .iconnav{
+
+  .iconnav {
     display: none;
   }
 }
@@ -176,67 +179,95 @@ section .container-fluid {
   text-transform: uppercase;
   text-align: center;
 }
+
+#photoslide {
+  background: url(img/backgroudslide.png);
+
+}
+
+.carousel-inner {
+  width: 900px;
+  height: 500px;
+  margin-left: 27%;
+
+
+}
+
+#photoslide p {
+  text-align: center;
+
+}
+
 /*======================================*/
-#realisation, #contactP2{
+#realisation,
+#contactP2 {
   color: #ffffff;
   position: relative;
   display: inlin;
   text-decoration: none;
   overflow: hidden;
-  margin-top:25px;
+  margin-top: 25px;
   margin-bottom: 100px
 }
-#realisation span, #contactP2 span{
+
+#realisation span,
+#contactP2 span {
   position: absolute;
   display: block;
 }
-#realisation span:nth-child(1), #contactP2 span:nth-child(1){
+
+#realisation span:nth-child(1),
+#contactP2 span:nth-child(1) {
   bottom: 0;
   right: -100%;
   width: 100%;
   height: 3px;
-  background: linear-gradient(90deg,transparent,blue);
+  background: linear-gradient(90deg, transparent, blue);
   animation: animate1 2s linear infinite;
 }
 
-@keyframes animate1{
-  0%
-  {
+@keyframes animate1 {
+  0% {
     left: -100%;
   }
-  50%,100%
-  {
+
+  50%,
+  100% {
     left: 100%;
   }
 }
 
-#realisation span:nth-child(2), #contactP2 span:nth-child(2){
+#realisation span:nth-child(2),
+#contactP2 span:nth-child(2) {
   top: 0;
   left: -100%;
   width: 100%;
   height: 3px;
-  background: linear-gradient(90deg,transparent,rgb(255, 255, 255));
+  background: linear-gradient(90deg, transparent, rgb(255, 255, 255));
   animation: animate2 2s linear infinite;
   animation-delay: 1s;
 }
 
-@keyframes animate2{
-  0%
-  {
+@keyframes animate2 {
+  0% {
     left: -100%;
   }
-  50%,100%
-  {
+
+  50%,
+  100% {
     left: 100%;
   }
 
 }
+
 /*======================================*/
-.float-left, .float-right {
+.float-left,
+.float-right {
   border-radius: 40px;
   visibility: visible;
 }
-.end{
+
+.end {
   margin-bottom: 100px;
 }
 
@@ -254,35 +285,35 @@ section .container-fluid {
   padding-left: 700px;
 }
 
-p{
+p {
   color: white;
 }
 
 /*FOOTER
 ======================================*/
-footer .container-fluid{
+footer .container-fluid {
   background-image: url(img/footer.jpg);
   width: auto;
   height: 150px;
 }
 
-footer .container-fluid h1{
+footer .container-fluid h1 {
   font-size: 35px;
   color: #000000;
 }
 
-.icon{
+.icon {
   margin-left: 100px;
   transform: scale(1);
   transition-property: transform;
   transition-duration: 400ms;
 }
 
-.icon:hover{
+.icon:hover {
   transform: scale(1.50);
 }
 
-.footer{
+.footer {
   margin-left: 29%;
 }
 
@@ -290,24 +321,26 @@ footer .container-fluid h1{
 ======================================*/
 /*form
 ======================================*/
-.page2{
+.page2 {
   background-image: url(img/realisation.jpg);
 }
 
-#contactP2{
+#contactP2 {
   font-size: 80px;
   margin-top: 50px;
   color: beige;
   text-transform: uppercase;
   text-align: center;
 }
-form{
+
+form {
   margin-bottom: 500x;
   text-align: center;
   font-size: 30px;
   color: beige
 }
-input{
+
+input {
   width: 500px;
   border-radius: 20px;
   box-shadow: 30px 15px 0px rgb(0, 0, 0);
@@ -315,38 +348,21 @@ input{
   transition: background-color 500ms;
 }
 
-input:focus{
+input:focus {
   border: 2px solid white;
 
 }
-input:invalid{
+
+input:invalid {
   border: red;
   background-color: red;
   box-shadow: 3px 3px 0px red;
 }
 
-textarea{
+textarea {
   height: 250px;
   width: 500px;
   border-radius: 20px;
   box-shadow: 30px 15px 0px rgb(0, 0, 0);
   margin-bottom: 100px;
-}
-#photoslide{
-  background: url(img/backgroudslide.png);
-  
-}
-
-.carousel-inner{
-  width: 900px;
-  height: 500px;
-  margin-left: 27%;
-  
-  
-}
-
-
-.carousel-inner img {
-  width: 100%;
-  height: 100%;
 }
